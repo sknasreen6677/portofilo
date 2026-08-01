@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>THIRUNAMALLI RUPARANI | Portfolio</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f4f7fc;
+color:#333;
+}
+
+header{
+background:linear-gradient(135deg,#4e54c8,#8f94fb);
+color:white;
+text-align:center;
+padding:70px 20px;
+}
+
+header img{
+width:160px;
+height:160px;
+border-radius:50%;
+border:5px solid white;
+margin-bottom:20px;
+}
+
+header h1{
+font-size:42px;
+}
+
+header p{
+font-size:20px;
+margin-top:10px;
+}
+
+nav{
+background:#222;
+padding:15px;
+text-align:center;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#00e5ff;
+}
+
+section{
+max-width:900px;
+margin:40px auto;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+h2{
+color:#4e54c8;
+margin-bottom:15px;
+}
+
+ul{
+padding-left:20px;
+}
+
+.skills{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+gap:15px;
+}
+
+.skill{
+background:#4e54c8;
+color:white;
+padding:12px;
+text-align:center;
+border-radius:8px;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:30px;
+}
+
+button{
+padding:10px 20px;
+background:#4e54c8;
+color:white;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-top:15px;
+}
+
+button:hover{
+background:#303f9f;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+
+<img src="photo.jpg" alt="Profile Photo">
+
+<h1>THIRUNAMALLI RUPARANI</h1>
+
+<p>Web Developer | Student</p>
+
+</header>
+
+<nav>
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+<h2>About Me</h2>
+
+<p><strong>Name :</strong> THIRUNAMALLI RUPARANI</p>
+
+<p><strong>Age :</strong> <span id="age"></span> Years</p>
+
+<p>
+Hello! I am THIRUNAMALLI RUPARANI.
+I am interested in Web Development, Java, HTML, CSS and JavaScript.
+I enjoy learning new technologies and creating websites.
+</p>
+
+</section>
+
+<section id="education">
+
+<h2>Education</h2>
+
+<ul>
+<li>Bachelor's Degree (Add Your College Name)</li>
+<li>Intermediate (Add College Name)</li>
+<li>SSC (Add School Name)</li>
+</ul>
+
+</section>
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills">
+
+<div class="skill">HTML</div>
+<div class="skill">CSS</div>
+<div class="skill">JavaScript</div>
+<div class="skill">Java</div>
+<div class="skill">Python</div>
+
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<p>Email : yourmail@gmail.com</p>
+
+<p>Phone : +91 XXXXXXXXXX</p>
+
+<button onclick="welcome()">Say Hello</button>
+
+</section>
+
+<footer>
+
+<p>© 2026 THIRUNAMALLI RUPARANI</p>
+
+</footer>
+
+<script>
+const dob = new Date("2006-07-18");
+
+const today = new Date();
+
+let age = today.getFullYear() - dob.getFullYear();
+
+let month = today.getMonth() - dob.getMonth();
+
+if(month < 0 || (month === 0 && today.getDate() < dob.getDate())){
+age--;
+}
+
+document.getElementById("age").innerHTML = age;
+
+function welcome(){
+alert("Welcome to THIRUNAMALLI RUPARANI's Personal Portfolio!");
+}
+
+</script>
+
+</body>
+</html>
